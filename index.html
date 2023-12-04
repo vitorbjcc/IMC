@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>IMC Calculator</h1>
+    <div id="inputsdiv">
+        <span>Altura em Metros <p><input type="number" id="inputaltm" placeholder="  Altura"></p></span>
+        <span>Peso em Quilos <p><input type="number" id="inputkg" placeholder="  Peso"></p></span>
+    </div>
+    <div>
+        <span><p><button id="btn">Calcular</button></p></span>
+    </div>
+    <div class="tabela">
+        <span id="span_tabela_bg" class="tabela">VEJA A INTERPRETAÇÃO DO IMC</span>
+        <p><span id="imc">IMC</span><span id="classi">CLASSIFICAÇÃO</span><span id="grau">GRAU</span></p>
+        <hr class="hr_tabela">
+        <p><span class="imc2">MENOR QUE 18,5</span><span class="classi2">MAGREZA</span><span class="grau2">0</span></p>
+        <hr class="hr_tabela">
+        <p><span class="imc2">ENTRE 18,5 E 24,9</span><span class="classi2">NORMAL</span><span class="grau2">   0</span></p>
+        <hr class="hr_tabela">
+        <p><span class="imc2">ENTRE 25,0 E 29,9</span><span class="classi2">SOBREPESO</span><span class="grau2" id="SOBREPESOGRAU">I</span></p>
+        <hr class="hr_tabela">
+        <p><span class="imc2">ENTRE 30,0 E 39,9</span><span class="classi2">OBESIDADE</span><span class="grau2" id="OBESIDADEGRAU">II</span></p>
+        <hr class="hr_tabela">
+        <p><span class="imc2">MAIOR QUE 40,0</span><span class="classi2">OBESIDADE GRAVE</span><span class="grau2" id="OBESIDADEGRAVEGRAU">III</span></p>
+        <hr class="hr_tabela">
+    </div>
+    <div>
+        <span><p id="res">SEU IMC: </p></span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
